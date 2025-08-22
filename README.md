@@ -21,3 +21,9 @@ RESPUESTAS
 
     link repositorio 
 
+   PARTE 3
+¿Hay una mejor forma de trabajar con git para no tener conflictos?
+- Una solucion seia el uso de las ramas, ya que cada desarrollador trabaja en su entorno sin afectar al de la otra persona, ademas se pueden atacar varias partes del codigo al mismo tiempo.
+¿Qué es y como funciona el Pull Request?
+- Como dice en su nombre, es una solicitud que lanza un desarrollador para querer fusionar su parte del trabajo a la rama de la cual se desarrolló, ademas es un espacio para dialogar lo que se hizo y si es aprobado que la rama se fusione con la principal.
+
