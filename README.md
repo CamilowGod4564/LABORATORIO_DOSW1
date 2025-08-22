@@ -27,3 +27,4 @@ RESPUESTAS
 ¿Qué es y como funciona el Pull Request?
 - Como dice en su nombre, es una solicitud que lanza un desarrollador para querer fusionar su parte del trabajo a la rama de la cual se desarrolló, ademas es un espacio para dialogar lo que se hizo y si es aprobado que la rama se fusione con la principal.
 
+MENSAJE DE ISAAC -> Junior va a salir campeon 2025-2
