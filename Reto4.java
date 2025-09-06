@@ -25,4 +25,13 @@ public class Reto4 {
 
         return combinado;
     }
+
+    public static void imprimirOrdenado(HashMap<String, Integer> mapa) {
+        // Pasamos el HashMap a un TreeMap que ordena las claves automáticamente
+        TreeMap<String, Integer> ordenado = new TreeMap<>(mapa);
+
+        for (Map.Entry<String, Integer> par : ordenado.entrySet()) {
+            System.out.println(par.getKey() + " -> " + par.getValue());
+        }
+    }
 }
