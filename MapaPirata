@@ -1,0 +1,22 @@
+import java.util.HashMap;
+import java.util.List;
+import java.util.AbstractMap;
+import java.util.Map;
+
+public class MapaPirata {
+
+    // Método para crear el mapa usando HashMap
+    public static HashMap<String, Integer> crearMapaConHashMap(List<Map.Entry<String, Integer>> pares) {
+        HashMap<String, Integer> mapa = new HashMap<>();
+
+        for (Map.Entry<String, Integer> par : pares) {
+            if (!mapa.containsKey(par.getKey())) {
+                mapa.put(par.getKey(), par.getValue());
+            }
+        }
+
+        return mapa;
+    }
+
+
+}
