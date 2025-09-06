@@ -1,4 +1,4 @@
-package Reto3;
+package LABORATORIO_DOSW1;
 import java.util.stream.Collectors;
 import java .util.stream.IntStream;
 
@@ -21,3 +21,4 @@ public class EcoMisterioso {
     }
        
 }
+
