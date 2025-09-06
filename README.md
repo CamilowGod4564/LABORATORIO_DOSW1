@@ -1,31 +1,27 @@
+# Respuestas sobre Git y Java Collections
 
-PARTICIPANTES
-- ISAAC DAVID PALOMO PERALTA
-- JUAN CAMILO CRISTANCHO VELASQUEZ
+## 1. Diferencia entre `git merge` y `git rebase`
 
-RESPUESTAS
+- **git merge**: Combina el historial de dos ramas en un nuevo commit de fusión, manteniendo la historia tal como sucedió.  
+  Ejemplo:  
 
-    PARTE 1
-    
-    git add: se utiliza para preparar los cambios en tu repositorio local, sirve como un paso antes
-    del commit, asi podemos seleccionar que archivos son los que vamos a enviar al repositorio en github
+- **git rebase**: Reescribe la historia, aplicando los commits de una rama encima de otra, como si siempre hubieran estado ahí.  
 
-    git commit -m "mensaje": sirve para registrar los cambios realizados en el repositorio local, los 
-    guarda en compañia de un mensaje que es util para saber que se guardo y que cambio, en este cambios
-    se hace referencia a la rama principal (-m).
-
-    PARTE 2 
-
-        7. la primer persona pudo hacer el git push sin ningun problema pero la segunta persona fue alertada de un error, este decia que era necesario primero hacer un pull que un push porque habian referencias del repositorio que no tenia este usuario
+## 2. Si dos ramas modifican la misma línea de un archivo, ¿qué sucede al hacer `merge`?
+Se genera un **conflicto**. Git no sabe qué cambio conservar y te pide resolverlo manualmente editando el archivo y eligiendo el contenido correcto antes de continuar.
 
 
-    link repositorio 
+## 3. Ver gráficamente el historial de merges y ramas en consola
+Se pueden usar varias cosas:
+```bash o git log --oneline --graph --decorate --all
 
-   PARTE 3
-¿Hay una mejor forma de trabajar con git para no tener conflictos?
-- Una solucion seia el uso de las ramas, ya que cada desarrollador trabaja en su entorno sin afectar al de la otra persona, ademas se pueden atacar varias partes del codigo al mismo tiempo.
-¿Qué es y como funciona el Pull Request?
-- Como dice en su nombre, es una solicitud que lanza un desarrollador para querer fusionar su parte del trabajo a la rama de la cual se desarrolló, ademas es un espacio para dialogar lo que se hizo y si es aprobado que la rama se fusione con la principal.
+## 4 Diferencia entre un commit y un push 
+ commit: Guarda los cambios en tu repositorio local con un mensaje descriptivo.
 
-mensaje Camilo: "la vaca 2.0"
+ push: Envía esos commits al repositorio remoto 
+
+## 5. Para que sirve `git stash` y `git pop`
+git stash: Guarda temporalmente los cambios no confirmados para dejar el área de trabajo limpia, sin hacer un commit.
+
+git stash pop: Recupera los cambios guardados con stash y los aplica nuevamente en el área de trabajo.
 
