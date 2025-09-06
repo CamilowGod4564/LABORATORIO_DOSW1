@@ -13,7 +13,7 @@ Se genera un **conflicto**. Git no sabe qué cambio conservar y te pide resolver
 
 ## 3. Ver gráficamente el historial de merges y ramas en consola
 Se pueden usar varias cosas:
-```bash o git log --oneline --graph --decorate --all
+``bash o git log --oneline --graph --decorate --all
 
 ## 4 Diferencia entre un commit y un push 
  commit: Guarda los cambios en tu repositorio local con un mensaje descriptivo.
