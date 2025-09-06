@@ -1,0 +1,31 @@
+package LABORATORIO_DOSW1;
+
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.List;
+import java.util.Map;
+import java.util.AbstractMap;
+
+public class Reto4 {
+
+    // Método en común: combina ambos mapas en un solo HashMap
+    public static HashMap<String, Integer> combinarMapas(HashMap<String, Integer> mapa, Hashtable<String, Integer> tabla) {
+        HashMap<String, Integer> combinado = new HashMap<>();
+
+        for (Map.Entry<String, Integer> par : mapa.entrySet()) {
+            if (!combinado.containsKey(par.getKey())) {
+                combinado.put(par.getKey(), par.getValue());
+            }
+        }
+
+        for (Map.Entry<String, Integer> par : tabla.entrySet()) {
+            if (!combinado.containsKey(par.getKey())) {
+                combinado.put(par.getKey(), par.getValue());
+            }
+        }
+
+        return combinado;
+    }
+
+
+}
